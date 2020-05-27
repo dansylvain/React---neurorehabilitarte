@@ -1,26 +1,19 @@
 import React from "react";
-import GoogleApiWrapper from './GoogleApiWrapper';
-
 
 class SobreMiColaboraciones extends React.Component {
   render() {
+
+    const style = {
+      marginTop: '500px',
+      backgroundColor : 'red',
+      color: 'red',
+  }
+
     return (
+      <div style={style}>
       <div className="section-container no-padding">
         <div className="container">
           <div className="row">
-            <div className="col-xs-12">
-              <GoogleApiWrapper />
-              {/* <iframe
-                id="map"
-                src="https://maps.google.com/maps?q=C\xE1diz&t=loc=&output=embed"
-                frameBorder={0}
-                style={{
-                  border: 0
-                }}
-                allowFullScreen
-              /> */}
-              {}
-            </div>
             <div className="col-xs-12">
               <div className="row">
                 <div className="col-md-6">
@@ -32,8 +25,7 @@ class SobreMiColaboraciones extends React.Component {
                       name="mc-embedded-subscribe-form"
                       className="validate"
                       target="_blank"
-                      noValidate
-                    >
+                      noValidate>
                       <div id="mc_embed_signup_scroll">
                         <div>
                           <div className="colorVerde contactForm">
@@ -119,7 +111,8 @@ class SobreMiColaboraciones extends React.Component {
                     </form>
                   </div>
                 </div>
-                {}
+
+
                 <div className="col-md-5 col-md-offset-1">
                   <h3>Natalia Tórtola Martín</h3>
                   <div>
@@ -137,6 +130,7 @@ class SobreMiColaboraciones extends React.Component {
             </div>
           </div>
         </div>
+      </div>
       </div>
     );
   }

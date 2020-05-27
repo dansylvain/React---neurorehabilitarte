@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import Layout from './components/Layout';
 // import Home from '';
 import SobreMiTabs from './components/SobreMiTabs';
@@ -20,7 +20,15 @@ class App extends Component {
     <ScrollToTop />
       <Layout>
         <Switch>
-          <Route path='/sobremi'>
+          <Route path='/sobremi/curriculum'>
+            <SobreMiTabs />
+            <SobreMiCurriculum />
+          </Route>
+          <Route path='/sobremi/colaboraciones'>
+            <SobreMiTabs />
+            <ContactoPage />
+          </Route>
+          <Route path='/sobremi/'>
             <SobreMiTabs />
             <SobreMiCurriculum />
           </Route>
@@ -36,16 +44,11 @@ class App extends Component {
           <Route path='/contacto'>
             <ContactoPage />
           </Route>
-          <Route path='/colaboraciones'>
-            <SobreMiTabs />
-            <ContactoPage />
-          </Route>
           <Route path='/:txt'>
             <Home />
           </Route>
-          <Route path='/'>
+          <Redirect from='/' to='/home' />
             <Home />
-          </Route>
         </Switch>
       </Layout>
     </BrowserRouter>

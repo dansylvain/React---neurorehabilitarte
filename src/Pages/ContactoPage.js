@@ -8,7 +8,7 @@ class ContactoPage extends Component {
 
     return (
       <Fragment>
-        <GoogleApiWrapper />
+        <GoogleApiWrapper/>
         <Contacto />
       </Fragment>
       )

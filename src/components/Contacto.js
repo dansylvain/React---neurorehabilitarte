@@ -1,10 +1,14 @@
-import React, {Fragment} from "react";
+import React from "react";
 
 class Contacto extends React.Component {
   render() {
+
+    const style = {
+      display: 'block',
+      paddingTop: '350px'
+  }
     return (
-      <div style={{ 
-      }}>
+      <div style={style}>
       <div className="section-container no-padding">
         <div className="container">
           <div className="row">

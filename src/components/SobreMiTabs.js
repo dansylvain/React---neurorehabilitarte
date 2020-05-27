@@ -13,12 +13,12 @@ class SobreMiTabs extends React.Component {
     return (
       <ul className="nav nav-tabs aboutTabs">
         <li className="nav-item">
-          <NavLink className="about nav-link" activeStyle={style} to="/sobremi">
+          <NavLink className="about nav-link" activeStyle={style} to="/sobremi/curriculum">
             Curículum
           </NavLink>
         </li>
-        <li className="nav-item">
-          <NavLink className="about nav-link" activeStyle={style} to="/colaboraciones">
+        <li className="nav-item" >
+          <NavLink className="about nav-link" activeStyle={style} to="/sobremi/colaboraciones">
             Colaboraciones
           </NavLink>
         </li>

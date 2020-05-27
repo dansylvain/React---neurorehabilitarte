@@ -50,6 +50,7 @@ class CommonFooter extends React.Component {
                     name="mc-embedded-subscribe-form"
                     className="validate"
                     target="_blank"
+                    value=""
                     noValidate
                   >
                     <div id="mc_embed_signup_scroll">

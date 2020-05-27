@@ -45,7 +45,7 @@ class CommonNavbar extends React.Component {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/sobremi" title activeStyle={style}>
+                  <NavLink to="/sobremi/curriculum" title activeStyle={style}>
                     {" "}
                     Sobre Mí
                   </NavLink>
