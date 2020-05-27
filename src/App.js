@@ -1,26 +1,56 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Layout from './components/Layout';
+// import Home from '';
+import SobreMiTabs from './components/SobreMiTabs';
+import SobreMiCurriculum from './components/SobreMiCurriculum';
+import Eventos from './components/Eventos';
+import Videos from './components/Videos';
+import Recursos from './components/Recursos';
+import ContactoPage from './Pages/ContactoPage';
+import Home from './Pages/Home';
+import ScrollToTop from './components/ScrollToTop'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+  render() {
+
+    return (
+    <BrowserRouter>
+    <ScrollToTop />
+      <Layout>
+        <Switch>
+          <Route path='/sobremi'>
+            <SobreMiTabs />
+            <SobreMiCurriculum />
+          </Route>
+          <Route path='/eventos'>
+            <Eventos />
+          </Route>
+          <Route path='/videos'>
+            <Videos />
+          </Route>
+          <Route path='/recursos'>
+            <Recursos />
+          </Route>
+          <Route path='/contacto'>
+            <ContactoPage />
+          </Route>
+          <Route path='/colaboraciones'>
+            <SobreMiTabs />
+            <ContactoPage />
+          </Route>
+          <Route path='/:txt'>
+            <Home />
+          </Route>
+          <Route path='/'>
+            <Home />
+          </Route>
+        </Switch>
+      </Layout>
+    </BrowserRouter>
+)
+  }
 }
 
 export default App;
