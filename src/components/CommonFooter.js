@@ -1,7 +1,15 @@
 import React from "react";
+import MailchimpSubscribe from "react-mailchimp-subscribe"
+
+
 
 class CommonFooter extends React.Component {
   render() {
+
+    const url = "https://mailchi.mp/09053732f5b6/neurorehabilitarte";
+
+    const SimpleForm = () => <MailchimpSubscribe url={url}/>
+    
     return (
       <footer>
         <div className="section-container footer-container">
@@ -42,7 +50,8 @@ class CommonFooter extends React.Component {
               </div>
               <div className="col-md-4">
                 <h4>Subscríbete a la Newsletter</h4>
-                <div id="mc_embed_signup">
+                {SimpleForm()}
+                {/* <div id="mc_embed_signup">
                   <form
                     action="https://gmail.us4.list-manage.com/subscribe/post?u=a1e604cbe6aa9871ac07ad11b&id=ea31abd7ef"
                     method="post"
@@ -112,7 +121,7 @@ class CommonFooter extends React.Component {
                       </div>
                     </div>
                   </form>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

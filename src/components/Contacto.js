@@ -1,23 +1,23 @@
-import React from "react";
+import React, {Fragment} from "react";
+import MailchimpSubscribe from "react-mailchimp-subscribe"
 
 class Contacto extends React.Component {
   render() {
 
     const style = {
       display: 'block',
-      paddingTop: '350px'
+      paddingTop: '450px'
   }
     return (
+
       <div style={style}>
       <div className="section-container no-padding">
         <div className="container">
           <div className="row">
-            <div className="col-xs-12">
 
-            </div>
             <div className="col-xs-12">
               <div className="row">
-                <div className="col-md-6">
+                {/* <div className="col-md-6">
                   <div id="mc_embed_signup">
                     <form
                       action="https://gmail.us4.list-manage.com/subscribe/post?u=a1e604cbe6aa9871ac07ad11b&id=ea31abd7ef"
@@ -26,8 +26,7 @@ class Contacto extends React.Component {
                       name="mc-embedded-subscribe-form"
                       className="validate"
                       target="_blank"
-                      noValidate
-                    >
+                      noValidate >
                       <div id="mc_embed_signup_scroll">
                         <div>
                           <div className="colorVerde contactForm">
@@ -112,7 +111,7 @@ class Contacto extends React.Component {
                       </div>
                     </form>
                   </div>
-                </div>
+                </div> */}
                 {}
                 <div className="col-md-5 col-md-offset-1">
                   <h3>Natalia Tórtola Martín</h3>

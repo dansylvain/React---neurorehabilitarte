@@ -9,13 +9,14 @@ import Videos from './components/Videos';
 import Recursos from './components/Recursos';
 import ContactoPage from './Pages/ContactoPage';
 import Home from './Pages/Home';
-import ScrollToTop from './components/ScrollToTop'
+import ScrollToTop from './components/ScrollToTop';
 
 class App extends Component {
 
   render() {
 
     return (
+
     <BrowserRouter>
     <ScrollToTop />
       <Layout>
