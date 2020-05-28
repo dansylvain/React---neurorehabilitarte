@@ -5,7 +5,7 @@ import MailchimpSubscribe from "react-mailchimp-subscribe"
 
 class CommonFooter extends React.Component {
   render() {
-
+ 
     const url = "https://mailchi.mp/09053732f5b6/neurorehabilitarte";
 
     const SimpleForm = () => <MailchimpSubscribe url={url}/>
